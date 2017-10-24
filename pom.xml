@@ -1,0 +1,114 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com</groupId>
+  <artifactId>winplus5</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  <dependencies>
+  
+  <!-- springdata.jar包 -->
+  	<dependency>
+  		<groupId>org.springframework.data</groupId>
+  		<artifactId>spring-data-jpa</artifactId>
+  		<version>1.11.1.RELEASE</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.data</groupId>
+  		<artifactId>spring-data-commons</artifactId>
+  		<version>1.13.1.RELEASE</version>
+  	</dependency>
+  	<!-- spring mvc包 -->
+  	 <dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-webmvc</artifactId>
+  		<version>4.3.7.RELEASE</version>
+  	</dependency>
+  	
+  	<!-- hibernate以及相关包 -->
+  	<dependency>
+  		<groupId>org.hibernate</groupId>
+  		<artifactId>hibernate-c3p0</artifactId>
+  		<version>4.3.0.Final</version>
+  	</dependency>	
+  	<dependency>
+  		<groupId>org.hibernate</groupId>
+  		<artifactId>hibernate-ehcache</artifactId>
+  		<version>4.3.0.Final</version>
+  	</dependency>
+  	<dependency>
+	  <groupId>org.hibernate</groupId>
+	  <artifactId>hibernate-core</artifactId>
+	  <version>4.3.0.Final</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.hibernate.javax.persistence</groupId>
+	  <artifactId>hibernate-jpa-2.0-api</artifactId>
+	  <version>1.0.1.Final</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.hibernate</groupId>
+	  <artifactId>hibernate-entitymanager</artifactId>
+	  <version>4.3.0.Final</version>
+	</dependency>
+	
+	<!-- mysql驱动包 -->
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.41</version>
+	</dependency>
+	
+	<!-- javaee api -->
+  	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>jstl</artifactId>
+		<version>1.2</version>
+	</dependency>
+	<dependency>
+	  <groupId>javax.servlet</groupId>
+	  <artifactId>javax.servlet-api</artifactId>
+	  <version>3.1.0</version>
+	</dependency>
+	
+	<!-- commons -->
+	<dependency>
+		<groupId>commons-logging</groupId>
+		<artifactId>commons-logging</artifactId>
+		<version>1.2</version>
+	</dependency>
+	<dependency>
+	  <groupId>commons-fileupload</groupId>
+	  <artifactId>commons-fileupload</artifactId>
+	  <version>1.2.2</version>
+	</dependency>
+	<dependency>
+	  <groupId>commons-io</groupId>
+	  <artifactId>commons-io</artifactId>
+	  <version>2.4</version>
+	</dependency>
+	
+  	<dependency>
+	  <groupId>cn.songxinqiang</groupId>
+	  <artifactId>com.baidu.ueditor</artifactId>
+	  <version>1.1.2-offical</version>
+	</dependency>
+  </dependencies>
+  
+  
+  <build>
+    <plugins>
+    	<!-- 编译的时候使用JDK7和UTF8编码 -->
+    	<plugin>
+    		<groupId>org.apache.maven.plugins</groupId>
+    		<artifactId>maven-compiler-plugin</artifactId>
+    		<version>3.1</version>
+    		<configuration>
+    			<source>1.7</source>
+    			<target>1.7</target>
+    			<encoding>UTF-8</encoding>
+    		</configuration>
+    	</plugin>
+    </plugins>
+  </build>
+</project>
